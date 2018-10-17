@@ -1,0 +1,10 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+    "scripts": {
+    "start": "browser-sync start -sf"
+  },
+    "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
