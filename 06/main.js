@@ -7,7 +7,7 @@ var array1 = [123, "string", true, {value: 321}, null],
             result[i] = array1[i];
         } else {
             if (i >= array1.length) {
-            result[i] = array2[i - 2 - array2.length];
+            result[i] = array2[i - array1.length];
             }
         }
     }
