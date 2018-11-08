@@ -1,32 +1,66 @@
 html, body {
-    height: calc(100% - 5px);
+    height: 100%;
 
     font-size: 25px;
     color: white;
 }
 
+html {
+    margin: 0;
+}
+
+body {
+    margin: 5px;
+}
+
 .header {
     background-color: #afab00;
+
+    height: 100px;
+
+    margin-bottom: 5px;
 }
 
 .container {
+    height: calc(100% - 210px);
+
+    margin-bottom: 5px;
+
+    display: flex;
 }
 
 .footer {
     background-color: #af0036;
+    height: 100px;
 }
 
 .sidebar {
     background-color: #3737be;
+
+    width: 100px;
+    height: 100%;
 }
 
 .content {
+    width: calc(100% - 105px);
+    height: 100%;
+
+    margin-left: 5px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content {
     background-color: #af4b00;
+
+    height: calc(100% - 105px);
+
+    margin-bottom: 5px;
 }
 
 .other-content {
     background-color: #49af00;
+
+    height: 100px;
 }
