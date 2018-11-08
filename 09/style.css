@@ -1,0 +1,32 @@
+html, body {
+    height: calc(100% - 5px);
+
+    font-size: 25px;
+    color: white;
+}
+
+.header {
+    background-color: #afab00;
+}
+
+.container {
+}
+
+.footer {
+    background-color: #af0036;
+}
+
+.sidebar {
+    background-color: #3737be;
+}
+
+.content {
+}
+
+.main-content {
+    background-color: #af4b00;
+}
+
+.other-content {
+    background-color: #49af00;
+}
