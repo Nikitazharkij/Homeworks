@@ -1,0 +1,48 @@
+html, body, .container {
+    height: 100%;
+}
+
+.header {
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a68a8a;
+}
+
+.footer {
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f68f8f;
+}
+
+.main {
+    height: calc(100% - 200px);
+}
+
+.menu {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #62dbca;
+}
+
+.main .row {
+    height: 100%;
+}
+
+.col-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
