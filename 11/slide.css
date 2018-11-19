@@ -9,42 +9,26 @@
     display: flex;
 }
 
-input {
-    font-size: 40px;
-    color: white;
+.right,
+.left {
     position: absolute;
     top: 240px;
     cursor: pointer;
-}
-
-
-.left {
-    left: 10px;
 }
 
 .right {
-    left: 565px;
-}
-
-
-/*
-.right::before,
-.left::before {
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    top: 240px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.right::before {
-    content: ">";
     left: 560px;
 }
 
-.left::before {
-    content: "<";
-    left: 40px;
+.left {
+    left: 25px;
 }
-*/
+
+span {
+    font-size: 40px;
+    color: white;
+}
+
+span:hover {
+    color: red;
+}

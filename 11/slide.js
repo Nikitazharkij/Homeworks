@@ -1,29 +1,33 @@
 (function() {
     "use strict";
 
-    function slideSize() {
+    document.querySelectorAll('.slides').forEach(function (element) {
+        var slideSize = element.clientWidth,
+            currentPosition = 0,
+            elementRight = element.querySelector('.right'),
+            elementLeft = element.querySelector('.left');
 
-document.querySelectorAll('.slides').forEach(function (element) {
-    var slideSize = element.clientWidth;
-        currentPosition = 0;
+            elementRight.onclick = function () {
+                currentPosition += slideSize;
 
-    document.querySelectorAll('.arrow').forEach(function (element) {
-    var currentPosition = 0,
-        size = slideSize();
+                if (currentPosition >= element.scrollWidth) {
+                    currentPosition = 0;
+               }
+                console.log(currentPosition);
 
-        element.onclick = function () {
-            var name = selectElement.value;
-
-            console.log(name);
-
-/*            currentPosition += size;
-
-            if (currentPosition >= element.scrollWidth) {
-                currentPosition = 0;
+                element.scroll({left: currentPosition, behavior: 'smooth'});
             }
 
-            element.scroll({left: currentPosition, behavior: 'smooth'});*/
-        }
+            elementLeft.onclick = function () {
+                currentPosition -= slideSize;
+                if (currentPosition <= 0) {
+                    currentPosition = element.scrollWidth - slideSize;
+               }
+                console.log(currentPosition);
+
+                element.scroll({left: currentPosition, behavior: 'smooth'});
+            }
+
     });
 
 })();
