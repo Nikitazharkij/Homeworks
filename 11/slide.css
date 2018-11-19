@@ -9,6 +9,25 @@
     display: flex;
 }
 
+input {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 240px;
+    cursor: pointer;
+}
+
+
+.left {
+    left: 10px;
+}
+
+.right {
+    left: 565px;
+}
+
+
+/*
 .right::before,
 .left::before {
     font-size: 40px;
@@ -28,4 +47,4 @@
     content: "<";
     left: 40px;
 }
-
+*/
