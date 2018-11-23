@@ -1,9 +1,10 @@
-mixin divCol ()
-    div(class="col mt-2")
-        h2(class="col") Page 1
-        div(class="col") Content for Page 1
-        a(class="badge" href="./page/1.html")
+div.col-9
+    mixin divCol(index)
+        div(class="col mt-2")
+            h2(class="col")= pages[index].name
+            div(class="col")= pages[index].previewContent
+                a(class="badge" href= '/page/' + pages[index].id + '.html') ...
 
-+divCol()
-+divCol()
-+divCol()
+    +divCol(0)
+    +divCol(1)
+    +divCol(2)

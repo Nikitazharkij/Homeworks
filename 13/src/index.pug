@@ -1,12 +1,14 @@
 extends ./_template.pug
 
-block navbar
+block container
     nav(class="navbar navbar-expand navbar-light bg-light")
-        a(class="navbar-brand") HW 13
+        a(class="navbar-brand")= header.logo
         div(class="navbar-nav navbar-expand mr-auto")
-            a(class="nav-item nav-link" href="/")
-            a(class="nav-item nav-link" href="/other.html") Other
-    div(class="row")
+
+            -
+            each item in navItems
+                    a(class="nav-item nav-link" href= item.href)= item.name
+
+    div.row
         include ./_somecol_3.pug
-    div(class="col-9")
         include ./_somecol_9.pug

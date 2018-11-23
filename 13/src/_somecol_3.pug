@@ -1,23 +1,15 @@
-div(class="col-3")
+div.col-3
     nav
         ul(class="nav flex-column")
 
             -
-                var paragraphs = [
-                    {
-                        class_li: 'nav-item',
-                        class_a: 'nav-link',
-                        content: 'Home'
-                    },
-                    {
-                        class_li: 'nav-item',
-                        class_a: 'nav-link',
-                        content: 'Other'
-                    },
-                    ];
+            each item in navItems
+                li.nav-item
+                    a(class="nav-link" href= item.href)= item.name
 
-            each item in paragraphs
-                li(class=item.class_li)
-                    a(class=item.class_a href='/' + item.content + '.html')= item.content
+        ul(class="nav flex-column pl-3") Pages:
 
-
+            -
+            each item in pages
+                li.nav-item
+                    a(class="nav-link" href= '/page/' + item.id + '.html')= item.name
