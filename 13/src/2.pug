@@ -1,0 +1,14 @@
+extends ./_template.pug
+
+block container
+    nav(class="navbar navbar-expand navbar-light bg-light")
+        a(class="navbar-brand")= header.logo
+        div(class="navbar-nav navbar-expand mr-auto")
+
+            -
+            each item in navItems
+                    a(class="nav-item nav-link" href= item.href)= item.name
+
+    div.col
+        h2.col= pages[1].name
+        div.col= pages[1].fullContent
