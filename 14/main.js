@@ -13,7 +13,9 @@ console.log('result2:', result2);
 function getReversArray(array) {
     var result = [];
 
-    // write code here
+    for (var i = array.length - 1; i >= 0; i--) {
+        result.push(array[i]);
+    }
 
     return result;
 }
