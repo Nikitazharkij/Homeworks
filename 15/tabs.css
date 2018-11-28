@@ -1,0 +1,29 @@
+.container {
+    width: 100px;
+    height: 200px;
+
+    border-style: solid;
+    border-color: #aaa;
+    border-width: 1px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container__select {
+    height: 25px;
+    width: 100%;
+}
+
+
+.container__tabs {
+    flex-grow: 1;
+}
+
+.container__tabs > * {
+    display: none;
+}
+
+.container__tabs_selected {
+    display: block;
+}
