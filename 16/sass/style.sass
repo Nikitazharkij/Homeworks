@@ -1,0 +1,30 @@
+$color1: #767676
+$color2: #2d2d2d
+
+@mixin margin-size($margin, $size)
+    margin-bottom: $margin
+    font-size: $size
+
+@mixin color-weight($color, $weight)
+    color: $color
+    font-weight: $weight
+
+.radio
+    margin-left: 20px
+    color: $color1
+    &_clear
+        color: $color2
+        .voxy-radio__box
+            border-color: $color2
+    &_question
+        @include margin-size(1.5em, 24px)
+        @include color-weight(#2d2d2d, bold)
+    &_options
+        display: flex
+        flex-direction: column
+    &_options-item
+        @include margin-size(2em, 19px)
+        align-items: flex-start
+    &_options-item__selected
+        .radio_option-item-text
+            @include color-weight(#2d2d2d, bold)
