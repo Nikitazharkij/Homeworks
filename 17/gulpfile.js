@@ -51,6 +51,10 @@ gulp.task('browser:run:temp', function (done) {
             {
                 route: '/libs/jquery',
                 dir: './node_modules/jquery/dist/'
+            },
+            {
+                route: '/js',
+                dir: './src/js/'
             }
         ]
     });

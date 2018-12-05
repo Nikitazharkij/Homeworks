@@ -22,10 +22,13 @@
         ]
     },
     "items": [{
-        "name": "First"
+        "name": "First",
+        "text": "First tab"
     }, {
-        "name": "Second"
+        "name": "Second",
+        "text": "Second tab"
     }, {
-        "name": "Last"
+        "name": "Last",
+        "text": "Last tab"
     }]
 }

@@ -1,8 +1,19 @@
-@import 'header'
-@import 'components/menu'
+@mixin width-height($width, $height)
+    width: $width
+    height: $height
 
-.some-class
-    color: red
-
-body
-    color: blue
+.container 
+    @include width-height(100px, 200px)
+    border-style: solid
+    border-color: #aaa
+    border-width: 1px
+    display: flex
+    flex-direction: column
+    &__select
+        @include width-height(100%, 25px)
+    &__content
+        flex-grow: 1
+    &__content > *
+        display: none
+    &__content > .container__conten_current
+        display: block
