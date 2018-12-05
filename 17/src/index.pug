@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Home work 17
+        link(rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.css")
+        link(rel="stylesheet" type="text/css" href="/style/main.css")
+    body
+        div.container
+            select.container__select
+
+                -
+                each item in items
+                    option.container__option(value= item.href)= item.name
+
+            div.container__content
+
+                -
+                each item in items
+                    div.container__item(data-name= item.href)= item.name
+
+
+

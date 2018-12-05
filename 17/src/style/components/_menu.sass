@@ -1,0 +1,18 @@
+$disabledColor: #c3c3c3
+
+@mixin menu_item__disabled
+    color: $disabledColor
+
+.menu
+    border: solid;
+    border-color: black;
+    &_item
+        color: black;
+        &__current
+            color: red;
+        &__disabled
+            @include menu_item__disabled
+    &__disabled
+        border-color: $disabledColor;
+        .menu_item
+            @include menu_item__disabled
