@@ -1,0 +1,27 @@
+$height1: 50px
+
+.menu
+    width: 100px
+    margin: 0 50px
+    position: relative
+    &:before
+        content: ' '
+        display: block
+        border: 8px solid transparent
+        border-left-color: #494949
+        position: absolute
+        top: 22px
+        right: 10px
+        transform: rotate(90deg)
+.item
+    height: $height1
+    line-height: $height1
+    background-color: red
+    & a
+        margin-left: 10px
+        color: black
+        text-decoration: none
+    &:hover
+        background-color: yellow
+.closed
+    display: none

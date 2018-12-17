@@ -1,0 +1,15 @@
+extends ./_template
+include ./component/_items
+
+
+block body
+    div.menu
+        div.menu__header.item
+            a(href= "#")= 'Menu'
+        div.menu__container.closed
+            +items('CSS')
+            +items('JavaScript')
+            +items('PHP')
+            +items('SQL')
+
+

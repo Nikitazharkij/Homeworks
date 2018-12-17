@@ -1,0 +1,27 @@
+.menu {
+  width: 100px;
+  margin: 0 50px;
+  position: relative; }
+  .menu:before {
+    content: ' ';
+    display: block;
+    border: 8px solid transparent;
+    border-left-color: #494949;
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    transform: rotate(90deg); }
+
+.item {
+  height: 50px;
+  line-height: 50px;
+  background-color: red; }
+  .item a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none; }
+  .item:hover {
+    background-color: yellow; }
+
+.closed {
+  display: none; }
